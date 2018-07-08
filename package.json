@@ -1,9 +1,16 @@
 {
   "name": "firemaker",
   "version": "1.0.1",
-  "description": "Simplfies the email & Password and Email Link Authentication methods with a promise based approach",
+  "description": "Simplfies the Email & Password and Email Link Authentication methods with a promise based approach",
   "main": "index.js",
-  "keywords": ["Rainmaker", "Firebase", "Authentication"],
+  "keywords": [
+    "Rainmaker",
+    "Firebase",
+    "Authentication"
+  ],
   "author": "Eckhardt Dreyer",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^5.2.0"
+  }
 }

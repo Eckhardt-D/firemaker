@@ -5,11 +5,26 @@
 #### This package is optimized for use in Vue.js environment
 
 ```console
-npm install firebase --save
 npm install firemaker --save
 ```
 
 ## To use it in your application, you need to initialize your app with firebase
+
+```javascript
+
+// Initializing Firebase
+var config = {
+    apiKey: "<API_KEY>",
+    authDomain: "<PROJECT_ID>.firebaseapp.com",
+    databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
+    projectId: "<PROJECT_ID>",
+    storageBucket: "<BUCKET>.appspot.com",
+    messagingSenderId: "<SENDER_ID>",
+  };
+firebase.initializeApp(config);
+
+// This ensures that your app is ready for Firemaker!
+```
 
 ## Sign Up with email and password
 
@@ -45,7 +60,8 @@ const actionCodeSettings = {
         handleCodeInApp: true
     };
 
-Firemaker('emailLink').signUp('emailtosendto', _, actionCodeSettings);
+// The first parameter is the email to send the link to.
+Firemaker('emailLink').signUp('example@mail.com', _, actionCodeSettings);
 ```
 
-# Enjoy, this package may grow over time to include more method and options
+# Enjoy, this package may grow over time to include more methods and options
