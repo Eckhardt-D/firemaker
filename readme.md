@@ -63,5 +63,28 @@ const actionCodeSettings = {
 // The first parameter is the email to send the link to.
 Firemaker('emailLink').signUp('example@mail.com', _, actionCodeSettings);
 ```
+## Get the currently logged in user, if available
 
-# Enjoy, this package may grow over time to include more methods and options
+```javascript
+import Firemaker from 'firemaker'
+
+    // Important to specify your strategy
+    Firemaker('local').getUser()
+        // Optios can be added in the returned user eg. 1)
+        // Returns full user object from Firebase
+        .then((user) => console.log(user));
+        // Eg 2)
+        // Returns user with display name
+        .then((user) => console.log(user.displayName));
+        // Eg 3)
+        // returns the unique id of the user
+        .then((user) => console.log(user.uid));
+        // Eg 4)
+        // Returns the logged in user's email
+        .then((user) => console.log(user.email));
+
+// There are other properties available on the object
+// Available on Firebase
+```
+
+# Enjoy, this package may grow over time to include more methods and options.

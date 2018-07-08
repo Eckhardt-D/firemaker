@@ -76,6 +76,23 @@ Firemaker.prototype = {
                 reject('Please provide the local option for signIn');
             }
         });
+    },
+
+    /**
+     * @method getUser Returns the currently signed in user, if available
+     * @param {*} None
+     */
+    getUser() {
+        return new Promise((resolve, reject) => {
+            firebase.auth().onAuthStateChanged((user) => {
+                if (user) {
+                  resolve(user);
+                } else {
+                  // No user is signed in.
+                  reject('No user found');
+                }
+            });
+        });
     }
 };
 
