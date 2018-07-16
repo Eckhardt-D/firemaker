@@ -12,5 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "firebase": "^5.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eckhardt-D/firemaker"
   }
 }
