@@ -1,6 +1,6 @@
 {
   "name": "firemaker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simplifies Firebase's email & password and email Link authentication methods with a promise based approach.",
   "main": "index.js",
   "keywords": [
