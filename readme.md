@@ -8,7 +8,7 @@
 npm install firemaker --save
 ```
 
-## To use it in your application, you need to initialize your app with firebase
+## To use it in your application, you need to initialize your app with firebase.
 
 ```javascript
 
@@ -86,5 +86,4 @@ import Firemaker from 'firemaker'
 // There are other properties available on the object
 // Available on Firebase
 ```
-
 # Enjoy, this package may grow over time to include more methods and options.
